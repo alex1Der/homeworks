@@ -3,7 +3,7 @@ require 'time'
 
 def task_3(string)
   second_string = '', first_string = ''
-  new_helper(first_string, second_string, string)
+  lol(first_string, second_string, string)
   helper(first_string, second_string)
 end
 
@@ -16,7 +16,7 @@ def helper(first_string, second_string)
   a.to_s
 end
 
-def new_helper(string1, _string2, main_string)
+def lol(string1, _string2, main_string)
   main_string.each_line do |line|
     if line.include?('Calling core')
       if string1 == ''
