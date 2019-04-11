@@ -21,6 +21,6 @@ def helper(first, second)
                                      '%H:%M:%S.%L').strftime('%Q').to_i
     first_point - second_point / -1000.0
   else
-    return 0
+    '0'
   end
 end
