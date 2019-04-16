@@ -11,6 +11,5 @@ def fibonacci_rec(num, array)
 end
 
 def fibo(first, second, count, num, array)
-  array << first if count <= num
   fibo(second, first + second, count + 1, num, array << first) if count <= num
 end
