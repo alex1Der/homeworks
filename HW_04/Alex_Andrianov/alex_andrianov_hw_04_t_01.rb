@@ -1,6 +1,6 @@
 def task_4_1(num)
   fibonacci_rec(num) if num > 0 && num.is_a? == true
-  0 if num.zero? == true
+  [] if num <= 0
 end
 
 def fibonacci_rec(num)
