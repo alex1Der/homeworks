@@ -1,15 +1,16 @@
 def task_4_1(num)
-  fibonacci_rec(num) if num > 0
+  array = []
+  fibonacci_rec(num, array) if num > 0
   [] if num < 0 || num > 1000
   [0] if num.zero?
-end
-
-def fibonacci_rec(num)
-  fibonacci(1, 1, 1, num)
-end
-
-def fibonacci(first, second, count, num, array = [])
-  array << first if count <= num
   array
-  fibonacci(second, first + second, count + 1, num) if count <= num
+end
+
+def fibonacci_rec(num, array)
+  fibo(1, 1, 1, num, array)
+end
+
+def fibo(first, second, count, num, array)
+  array << first if count <= num
+  fibo(second, first + second, count + 1, num, array << first) if count <= num
 end
