@@ -18,11 +18,11 @@ def default_magic_number(default_value)
   default_value['pool'].to_i * default_value['timeout'].to_i
 end
 
-def value_selection(selected_value)
-  result_value = {}
-  result_value[:db] = selected_value['database'] if selected_value.key?('database')
-  result_value[:user] = selected_value['username'] if selected_value.key?('username')
-  result_value[:password] = selected_value['password'] if selected_value.key?('password')
-  result_value[:magic_number] = default_magic_number(selected_value)
-  result_value
+def value_selection(sel_value)
+  res_value = {}
+  res_value[:db] = sel_value['database'] if sel_value.key?('database')
+  res_value[:user] = sel_value['username'] if sel_value.key?('username')
+  res_value[:password] = sel_value['password'] if sel_value.key?('password')
+  res_value[:magic_number] = default_magic_number(sel_value)
+  res_value
 end
