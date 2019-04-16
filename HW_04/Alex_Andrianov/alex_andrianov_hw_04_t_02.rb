@@ -10,11 +10,8 @@ def task_4_2(input)
 end
 
 def default_magic_number(default_value)
-  if default_value['pool'].nil?
-    default_value['pool'] = 1
-  elsif default_value['timeout'].nil?
-    default_value['timeout'] = 1000
-  end
+  default_value['pool'] = 1 if default_value['pool'].nil?
+  default_value['timeout'] = 1000 if default_value['timeout'].nil?
   default_value['pool'].to_i * default_value['timeout'].to_i
 end
 
