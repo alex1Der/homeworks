@@ -5,7 +5,7 @@ def task_4_2(input)
     input
   else
     new_input = YAML.safe_load(input)
-    new_input.map { |key, value| [key.to_sym => value_selection(value)] }
+    new_input.map { |key, value| [key.to_sym => value_selection(value)] }.flatten
   end
 end
 
