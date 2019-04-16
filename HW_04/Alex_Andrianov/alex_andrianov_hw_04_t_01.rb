@@ -1,10 +1,10 @@
 def task_4_1(num)
-  fibonacci_rec(num) if num > 0 && num.is_a?
-  0 if num.zero?
+  fibonacci_rec(num) if num > 0 && num.is_a? == true
+  0 if num.zero? == true
 end
 
 def fibonacci_rec(num)
-  fibonacci(0, 1, 1, num)
+  fibonacci(1, 1, 1, num)
 end
 
 def fibonacci(first, second, count, num)
