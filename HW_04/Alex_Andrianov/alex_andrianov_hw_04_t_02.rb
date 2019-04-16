@@ -5,7 +5,7 @@ def task_4_2(input)
     input
   else
     new_inp = YAML.safe_load(input)
-    new_inp.map { |key, value| [key.to_sym => value_select(value)] }.flatten
+    new_inp.map { |key, value| [key.to_sym => value_sel(value)] }.flatten
   end
 end
 
@@ -18,7 +18,7 @@ def default_magic_number(default_value)
   default_value['pool'].to_i * default_value['timeout'].to_i
 end
 
-def value_select(selected_value)
+def value_sel(selected_value)
   result_value = {}
   if selected_value.key?('database')
     result_value[:db] = selected_value['database']
