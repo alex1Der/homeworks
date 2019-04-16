@@ -3,6 +3,7 @@ def task_4_1(num)
   return [] if num < 0 || num > 1000
   return [num] if num.zero?
   fibonacci_rec(num, array) if num > 0
+  
   array
 end
 
