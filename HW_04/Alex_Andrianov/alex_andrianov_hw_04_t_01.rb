@@ -1,8 +1,8 @@
 def task_4_1(num)
   array = []
   fibonacci_rec(num, array) if num > 0
-  [] if num < 0 || num > 1000
-  [0] if num.zero?
+  return [] if num < 0 || num > 1000
+  return [num] if num.zero?
   array
 end
 
