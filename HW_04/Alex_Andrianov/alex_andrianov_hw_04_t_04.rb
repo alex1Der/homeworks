@@ -1,7 +1,7 @@
 def task_4_4(string)
   if string == string.reverse && string.empty? != true
-    return true
+    true
   else
-    return false
+    false
   end
 end
