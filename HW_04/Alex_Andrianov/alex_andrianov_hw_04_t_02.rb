@@ -4,8 +4,8 @@ def task_4_2(input)
   if input.empty?
     input
   else
-    new_input = YAML.safe_load(input)
-    new_input.map { |key, value| key.to_sym => value_select(value) }.flatten
+    new_inp = YAML.safe_load(input)
+    new_inp.map { |key, value| [key.to_sym => value_select(value)] }.flatten
   end
 end
 
